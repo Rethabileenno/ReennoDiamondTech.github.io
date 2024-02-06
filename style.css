@@ -1,0 +1,91 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 178, 231);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+
+
+header{
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-item:nth-child(1) a {
+    background-color: #f9f9f9;
+}
+
+.nav-item:nth-child(2) a {
+    background-color: #f1c40f;
+}
+
+.nav-item:nth-child(3) a {
+    background-color: #e67e22;
+}
+
+.nav-item:nth-child(4) a {
+    background-color: #e74c3c;
+}
+
+header a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+.home {
+ 
+    padding: 20px;
+    margin: 20px;
+}
+
+.home h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.home p {
+    color: black;
+    font-size: 1em;
+}
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-us{
+    background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff);
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 4s linear infinite;
+}
+
+@keyframes flow {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
